@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		/*.parent{
+			color:orange;
+			font-size: 1.5rem;
+		}*/
+/*		child selector*/
+		.demo>p{
+			color: red;
+			font-size: 1.5rem;
+		}
+/*		descandant*/
+		.demo p{
+			background-color: yellow;
+		}
+
+		/* general sibling	*/
+		.demo~h1{
+			background-color: black;
+			color: red;
+			
+		}
+	</style>
+</head>
+<body>
+	<!-- <section class="parent">
+		<h1>hello</h1>
+		<h2> good evening</h2>
+		<span>how are you</span>
+	</section> -->
+	<section class="demo">
+		<p>this is para one child to section</p>
+		<p>this is para two child to section</p>
+		<div>
+			<h1>heading</h1>
+			<p>this is para one grand child to section</p>
+		</div>
+		<p>this is para three child to section</p>
+	</section>
+	<h1> good afternoon</h1>
+</body>
+</html>
